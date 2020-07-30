@@ -611,6 +611,16 @@ ul{
     color: #fff;
 }
 
+@media only screen and (max-width: 991px) {
+  .blogs .card{
+      display: inline-block !important;
+  }
+  .blogs .col-md-4{
+      margin-top: 30px !important;
+      margin-left: -45px !important;
+  }
+}
+
 /* Alumni */
 
 .alumni{
