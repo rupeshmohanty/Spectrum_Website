@@ -14,8 +14,8 @@
         });
 
         window._ = new Glider(document.querySelector('.glider'), {
-            slidesToShow: 4, //'auto',
-            slidesToScroll: 4,
+            slidesToShow: 5, //'auto',
+            slidesToScroll: 5,
             itemWidth: 10,
             draggable: true,
             scrollLock: false,
@@ -29,9 +29,9 @@
                 {
                     breakpoint: 800,
                     settings: {
-                        slidesToScroll: 4,
+                        slidesToScroll: 5,
                         itemWidth: 250,
-                        slidesToShow: 4,
+                        slidesToShow: 5,
                         exactWidth: true,
                         dots: false,
                     }
@@ -39,8 +39,8 @@
                 {
                     breakpoint: 700,
                     settings: {
-                        slidesToScroll: 4,
-                        slidesToShow: 4,
+                        slidesToScroll: 5,
+                        slidesToShow: 5,
                         dots: false,
                         arrows: false,
                     }
@@ -63,5 +63,6 @@
                     }
                 }
             ]
+            
         });
       });

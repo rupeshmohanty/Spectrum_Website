@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spectrum</title>
-
+    <link rel="icon" href="assets/tablogo.png">
     <!----------------Font Styles--------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
@@ -16,6 +16,7 @@
     <!-----------------------------CSS FILES------------------>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/glider.css" />
+    <link rel="stylesheet" href="./css/modal.css">
 
     <!----------------AOS------------------>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
@@ -29,22 +30,49 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap    CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+    <!-- Modal -->
+    <script>
+		$(document).ready(function(){
+			$("#myModal").modal('show');
+		});
+	</script>
 
 </head>
 
 <body>
 
+    
+      <!--Popup Modal-->
+<div id="myModal" class="modal fade" >
+    <div class="modal-dialog" >
+        <div class="modal-content" style="width:50vw;position:fixed;transform: translate(-50%,0%);top:0%;left: 50%;">
+            <!--<div class="modal-header">
+                <h4 class="modal-title">Subscribe our Newsletter</h4>
+            </div>-->
+            <div class="modal-body" >
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h3><strong>Upcoming Events</strong></h3><span class="badge badge-danger">New</span><br/><br/>
+							<div class="container text-center">
+                                <img src="./assets/Mohan bhaiya-01.jpg" alt="" class="modal_img" style="display:inline-block;" width="300" height="400"><br>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSci42rOTPspfscc3rZtMM9HrJ8OkuIOhTB87auu0fcHIJ0s0w/viewform?usp=sf_link"
+                                class="btn btn-outline-success" style="display: inline-block;border-radius: 25px;">Register for the event</a>
+                            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
     <!-- -----------------------------------------------------ICON BAR----------------------------- -->
     <div class="icon-bar">
-        <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
-        <a href="#"><i class="fab fa-google-plus-g text-white"></i></a>
-        <a href="#"><i class="fab fa-github text-white"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+        <a href="https://www.facebook.com/spCETrum"><i class="fab fa-facebook-f text-white"></i></a>
+        <a href="https://github.com/Spectrum-CETB"><i class="fab fa-github text-white"></i></a>
+        <a href="https://www.linkedin.com/in/spectrum-cet-3b71431b1/"><i class="fab fa-linkedin-in text-white"></i></a>
+        <a href="https://www.instagram.com/spectrum.cetb/?hl=en"><i class="fab fa-instagram text-white"></i></a>
     </div>
 
 
@@ -61,6 +89,7 @@
                         <a href="#about">About Us</a>
                         <a href="#projects">Projects</a>
                         <a href="#team">Team</a>
+                        <a href="./mozilla-campus-club">Mozilla Campus Club</a>
                         <a href="#contact">Contact us</a>
 
                     </div>
@@ -89,7 +118,7 @@
 
             <div class="mid-nav">
                 <ul class="nav-items">
-                    <li class="nav-link current">
+                    <!-- <li class="nav-link current">
                         <a href="#home">Home</a>
                     </li>
                     <li class="nav-link">
@@ -101,12 +130,12 @@
                     </li>
                     <li class="nav-link">
                         <a href="#team">Team</a>
+                    </li> -->
+                    <li class="nav-link">
+                        <a href="./mozilla-campus-club/">Mozilla Campus Club</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#faq">FAQ</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#contact">Contact Us</a>
+                        <a href="./spectrum-internship-drive/internship_2019-20/">Spectrum Internship Drive 2019</a>
                     </li>
                 </ul>
             </div>
@@ -114,6 +143,7 @@
         <img class="img-fluid" src="./assets/main.png">
 
     </div>
+
 
     <!-----------------------About Us------------------->
     <section class="about" id="about">
@@ -300,14 +330,15 @@
                 <!-- Event 1 -->
                 <div class="col-md-4 text-center">
                     <div class="card">
-                        <img src="./assets/Mozilla-01.jpg" alt="" width="300" height="400">
+                        <img src="./assets/Mohan bhaiya-01.jpg" alt="" width="300" height="400">
                         <div class="cover">
                             <div class="title">
                                 <h1 class="lead">
-                                    <strong>Event Name </strong> : 5 things to know before submitting a CFP!<br>
+                                    <strong>Event Name : </strong> Circuits and VLSI
                                 </h1><br>
-                                <a href="https://www.instagram.com/p/CCwFkZaJVg8/?utm_source=ig_web_copy_link"
-                                    class="btn-card" style="display: inline-block;">More Details</a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSci42rOTPspfscc3rZtMM9HrJ8OkuIOhTB87auu0fcHIJ0s0w/viewform?usp=sf_link"
+                                    class="btn-card" style="display: inline-block;">Register for the event</a>
+
                             </div>
                         </div>
                     </div>
@@ -331,15 +362,14 @@
                 <!-- Event 3 -->
                 <div class="col-md-4 text-center">
                     <div class="card">
-                        <img src="./assets/SID.jpg" alt="" width="300" height="400">
+                        <img src="./assets/Mozilla-01.jpg" alt="" width="300" height="400">
                         <div class="cover">
                             <div class="title">
                                 <h1 class="lead">
-                                    <strong>Event Name : </strong> Spectrum Internship Drive
+                                    <strong>Event Name </strong> : 5 things to know before submitting a CFP!<br>
                                 </h1><br>
-                                <a href="https://www.instagram.com/p/B-2X--_JO-A/?utm_source=ig_web_copy_link"
+                                <a href="https://www.instagram.com/p/CCwFkZaJVg8/?utm_source=ig_web_copy_link"
                                     class="btn-card" style="display: inline-block;">More Details</a>
-
                             </div>
                         </div>
                     </div>
@@ -512,7 +542,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div><br>
+        <!-- <div class="text-center">
+            <a href="https://dev.to/spectrumcetb" class="btn-card" style="display: inline-block;">See more Blogs!</a>
+        </div> -->
 
     </section><br>
 
@@ -529,189 +562,413 @@
             <div class="glider-contain">
                 <div class="glider">
 
-                    <div class="team-container">
-                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
-                        <div class="team-overlay">
-
-                            <div class="team-text">
-                                <p>Soumya Mohanty</p>
-                                <p style="font-size: 0.5em;">Core Member</p>
-                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                <a href="#"><i class="fab fa-github text-white"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
-                            </div>
+                   <div class="team-container">
+                      <img src="./assets/soumyabal.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Soumya Bal</p>
+                             <p style="font-size: 0.6em;">Convenor</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
                         </div>
-                    </div>
-                    <div class="team-container">
-                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
-                        <div class="team-overlay">
-
-                            <div class="team-text">
-                                <p>Soumya Mohanty</p>
-                                <p style="font-size: 0.5em;">Core Member</p>
-                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                <a href="#"><i class="fab fa-github text-white"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
-                            </div>
                         </div>
-                    </div>
-                    <div class="team-container">
-                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
-                        <div class="team-overlay">
-
-                            <div class="team-text">
-                                <p>Soumya Mohanty</p>
-                                <p style="font-size: 0.5em;">Core Member</p>
-                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                <a href="#"><i class="fab fa-github text-white"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
-                            </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/soumya.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p style="font-size: 0.8em;">Soumya Ranjan Mohanty</p>
+                             <p style="font-size: 0.6em;">Technical Head</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
                         </div>
-                    </div>
-                    <div class="team-container">
-                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
-                        <div class="team-overlay">
-
-                            <div class="team-text">
-                                <p>Soumya Mohanty</p>
-                                <p style="font-size: 0.5em;">Core Member</p>
-                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                <a href="#"><i class="fab fa-github text-white"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
-                            </div>
                         </div>
-                    </div>
-                    <div class="team-container">
-                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
-                        <div class="team-overlay">
-
-                            <div class="team-text">
-                                <p>Soumya Mohanty</p>
-                                <p style="font-size: 0.5em;">Core Member</p>
-                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                <a href="#"><i class="fab fa-github text-white"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
-                            </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/pritish.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p style="font-size: 0.8em;">Pritish Roshan Ray</p>
+                             <p style="font-size: 0.6em;">Technical Head</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
                         </div>
-                    </div>
-                    <div class="team-container">
-                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
-                        <div class="team-overlay">
-
-                            <div class="team-text">
-                                <p>Soumya Mohanty</p>
-                                <p style="font-size: 0.5em;">Core Member</p>
-                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                <a href="#"><i class="fab fa-github text-white"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
-                            </div>
                         </div>
-                    </div>
-                    <div class="team-container">
-                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
-                        <div class="team-overlay">
-
-                            <div class="team-text">
-                                <p>Soumya Mohanty</p>
-                                <p style="font-size: 0.5em;">Core Member</p>
-                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                <a href="#"><i class="fab fa-github text-white"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
-                            </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/shubam.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Subhampreet Mohanty</p>
+                             <p style="font-size: 0.6em;">Technical Head</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
                         </div>
-                    </div>
-                    <div class="team-container">
-                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
-                        <div class="team-overlay">
-
-                            <div class="team-text">
-                                <p>Soumya Mohanty</p>
-                                <p style="font-size: 0.5em;">Core Member</p>
-                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                <a href="#"><i class="fab fa-github text-white"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
-                            </div>
                         </div>
-                    </div>
-                    <div class="team-container">
-                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
-                        <div class="team-overlay">
-
-                            <div class="team-text">
-                                <p>Soumya Mohanty</p>
-                                <p style="font-size: 0.5em;">Core Member</p>
-                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                <a href="#"><i class="fab fa-github text-white"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
-                            </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/deepak.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Deepak Prusty</p>
+                             <p style="font-size: 0.6em;">Technical Head</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
                         </div>
-                    </div>
-                    <div class="team-container">
-                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
-                        <div class="team-overlay">
-
-                            <div class="team-text">
-                                <p>Soumya Mohanty</p>
-                                <p style="font-size: 0.5em;">Core Member</p>
-                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                <a href="#"><i class="fab fa-github text-white"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
-                            </div>
                         </div>
-                    </div>
-                    <div class="team-container">
-                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
-                        <div class="team-overlay">
-
-                            <div class="team-text">
-                                <p>Soumya Mohanty</p>
-                                <p style="font-size: 0.5em;">Core Member</p>
-                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                <a href="#"><i class="fab fa-github text-white"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
-                            </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/trideep.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Trideep Barik</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
                         </div>
-                    </div>
-                    <div class="team-container">
-                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
-                        <div class="team-overlay">
-
-                            <div class="team-text">
-                                <p>Soumya Mohanty</p>
-                                <p style="font-size: 0.5em;">Core Member</p>
-                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                <a href="#"><i class="fab fa-github text-white"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
-                            </div>
                         </div>
-                    </div>
-                    <div class="team-container">
-                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
-                        <div class="team-overlay">
-
-                            <div class="team-text">
-                                <p>Soumya Mohanty</p>
-                                <p style="font-size: 0.5em;">Core Member</p>
-                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                <a href="#"><i class="fab fa-github text-white"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
-                            </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/rupesh.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Rupesh Mohanty</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
                         </div>
-                    </div>
-
+                        </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/suryansu.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Suryansu Dash</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/abhishek.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Abhishek Kumar</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/asish.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Ashish Panda</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div>   
+                <div class="team-container">
+                      <img src="./assets/gunjan.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Gunjan Giri</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/deba.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Debaditya Mohanty</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/asutosh.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Ashutosh Mohanty</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/ajay.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Ajay Patra</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/satyam.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Satyam Mishra</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/suchi.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Suchismita Swain</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/anisha.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Anisha Biswal</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div> 
+                <div class="team-container">
+                      <img src="./assets/sammy.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Samikshya Panda</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/kshitij.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Kshitij Srivastava</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/prajojita.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Prajojita Nayak</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/soumyapriya.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Soumyashree Priyambada</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div> 
+                <div class="team-container">
+                      <img src="./assets/silla.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Silla Priyadarshni</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/saheen.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Saheen Jasmine</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div> 
+                <div class="team-container">
+                      <img src="./assets/siddhant.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Siddhant Patro</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/animesh.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Animesh Nanda</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div> 
+                <div class="team-container">
+                      <img src="./assets/sambit.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Sambit Swain</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/susanjeet.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Susanjeet Priyadarshi</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/suvam.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Suvam Pattnaik</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div>
+                <div class="team-container">
+                      <img src="./assets/swapnil.jpg" alt="Avatar" class="team-image">
+                      <div class="team-overlay">
+                        
+                        <div class="team-text">
+                             <p>Swapnil Nayak</p>
+                             <p style="font-size: 0.6em;">   Member</p> 
+                             <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#"><i class="fab fa-github text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        </div>
+                </div>
+                
 
                 </div>
                 <button class="glider-prev" style="visibility: hidden;">&laquo;</button>
@@ -820,11 +1077,10 @@
             <div class="container">
                 <div class="row py-4 d-flex align-items-center">
                     <div class="col-md-12 text-center">
-                        <a href="#"><i class="fab fa-facebook-f text-white mr-4"></i></a>
-                        <a href="#"><i class="fab fa-google-plus-g text-white mr-4"></i></a>
-                        <a href="#"><i class="fab fa-github text-white mr-4"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in text-white mr-4"></i></a>
-                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        <a href="https://www.facebook.com/spCETrum"><i class="fab fa-facebook-f text-white mr-4"></i></a>
+                        <a href="https://github.com/Spectrum-CETB"><i class="fab fa-github text-white mr-4"></i></a>
+                        <a href="https://www.linkedin.com/in/spectrum-cet-3b71431b1/"><i class="fab fa-linkedin-in text-white mr-4"></i></a>
+                        <a href="https://www.instagram.com/spectrum.cetb/?hl=en"><i class="fab fa-instagram text-white"></i></a>
 
                     </div>
                 </div>
@@ -937,10 +1193,10 @@
     <!-- Bootstrap tooltips -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
+    <!-- Bootstrap    JavaScript -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
+    <!-- MDB    JavaScript -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 

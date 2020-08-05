@@ -14,7 +14,11 @@ ul{
     list-style-type: none;
 }
 
-
+button .btn-card:hover{
+    background-color: #ffffff !important;
+    color: #ff6611 !important;
+    border: 1px solid #ff6611 !important;
+}
 
 /* ---------------------------------------------------------ICON BAR-------------------------------- */
 
@@ -38,7 +42,7 @@ ul{
 }
 
 .icon-bar a:hover {
-  background-color: #DC8700;
+  background-color: #ff6611;
 }
 
 
@@ -882,10 +886,10 @@ ul{
 
 
 .glider-contain {
-  width: 100%;
-  max-width: 997px;
+  width: 100vw;
+  max-width: 1200px;
   margin: 0 auto;
-}
+  }
 .glider-contain button{
   padding: 0;
   margin: 0;
@@ -903,7 +907,7 @@ ul{
   min-height: 150px;
 }
 .team-container {
-margin: 20px;
+margin: 5px;
 position: relative;
 width: 50%;
 }
@@ -1083,12 +1087,7 @@ footer .first-row p{
 
 @media (max-width: 991px)
 {
-  .banner{
-    /* padding: 50px; */
-  
-  }
-
-  
+ 
   .banner header
   {
     padding: 5px 20px;
@@ -1172,14 +1171,14 @@ footer .first-row p{
 
 
 
-  .blogs .row .card{
+  .achievements .row .card{
     margin-left: auto;
     margin-right: auto;
     
     
   }
 
-  .events{
+  .achievements{
     padding: 0%;
     margin-left: auto;
     margin-right: auto;
@@ -1220,7 +1219,7 @@ footer .first-row p{
 
 @media (max-width: 1350px){
     .mid-nav{
-      display: none;
+      display: inline-block;
     }
   
     .about .heading{
@@ -1228,6 +1227,11 @@ footer .first-row p{
     }
   }
 
+/* @media (max-width: 991px) {
+  .mid-nav {
+    display: none;
+  }
+} */
     
 
 @media (min-width: 40rem) {
@@ -1253,5 +1257,9 @@ footer .first-row p{
   }
 }
 
-
+@media (max-width: 991px) {
+  .card{
+    width: 18em !important;
+  }
+}
 
